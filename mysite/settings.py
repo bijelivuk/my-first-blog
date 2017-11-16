@@ -25,7 +25,7 @@ SECRET_KEY = '-+*+fpy#a0+b$u)3^%yrelt5c)lk6m5trgpuj&watr-o)6=+t8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'dako17.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'dako17.pythonanywhere.com', 'fuhur', 'vm-ubuntu']
 
 
 # Application definition
