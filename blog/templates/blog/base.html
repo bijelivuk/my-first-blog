@@ -15,8 +15,9 @@
                 <a href="{% url 'user_account' %}" class="top-menu"><span class="glyphicon glyphicon-user"></span></a>
                 <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-edit"></span></a>
                 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <p class="top-menu">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
             {% else %}
-                <a href="{% url 'user_login' %}" class="top-menu"><span class="glyphicon glyphicon-log-in"></span></a>
+                <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
             {% endif %}
             <h1><a href="/">Simple Blog</a></h1>
         </div>
