@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    {% if user.is_authenticated %}
+        <em>Account info</em><br>
+        <table>
+        <tr><td>Username:</td><td>{{ user.username }}</td></tr>
+        <tr><td>First name:</td><td>{{ user.first_name }}</td></tr>
+        <tr><td>Last name:</td><td>{{ user.last_name }}</td></tr>
+        <tr><td>e-mail:</td><td>{{ user.email }}</td></tr>
+        </table>
+    {% else %}
+        TODO: You are not logged in.
+    {% endif %}
+{% endblock %}
